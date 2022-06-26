@@ -1,0 +1,1 @@
+from .autocompile import AutoCompileTrick
