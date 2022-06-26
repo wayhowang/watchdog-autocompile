@@ -73,7 +73,7 @@ class AutoCompileTrick(Trick):
         if not self.path_mapper.valid(event.src_path):
             return
 
-        os.renames(event.src_path, self.path_mapper.map(event.src_path))
+        os.renames(self.path_mapper.map(event.src_path), self.path_mapper.map(event.dest_path))
 
     def on_created(self, event: Union[DirCreatedEvent, FileCreatedEvent]):
         if not self.path_mapper.valid(event.src_path):
