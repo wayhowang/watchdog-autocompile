@@ -4,7 +4,7 @@ VERSION = '0.0.1'
 DESCRIPTION = 'Convert python 3 program with typehint into python 2'
 
 setup(
-        name="autocompile", 
+        name="watchdog_autocompile", 
         version=VERSION,
         python_requires='>=3.7.0',
         author="Wayho Wang",
